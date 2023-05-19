@@ -1,0 +1,30 @@
+module.exports = {
+  preset: "jest-expo",
+  verbose: false,
+  roots: ['<rootDir>/components'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-native/extend-expect',
+  ],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  transformIgnorePatterns: [],
+  collectCoverage: true,
+  coverageDirectory: 'test/coverage',
+  coverageReporters: ['lcov'],
+  isolatedModules: true,
+  collectCoverageFrom: [
+    'components/**/*.{ts,tsx}',
+    '!components/**/*.d.ts',
+    '!components/**/*.story.tsx',
+  ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/android/',
+    '<rootDir>/ios/',
+    '<rootDir>/lib/',
+    '<rootDir>/test/',
+    '<rootDir>/dist/',
+    'babel.config.js',
+    'metro.config.js',
+  ],
+  testPathIgnorePatterns: ['node_modules/', 'android/', 'ios/', 'reports/'],
+}

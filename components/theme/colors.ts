@@ -1,0 +1,18 @@
+export default {
+  title: '#222222',
+  text: '#4C4C60',
+  background: '##FAFCFF',
+  white: '#fff',
+  border: '#e2e2e2',
+  borderSecondary: '#3B5999',
+  borderLine: '#d3d3d3',
+  success: '#00824B',
+  card: '#CACDD6',
+  mainLight: 'rgba(255, 255, 255, 0.3)',
+  textSecondary: '#EEF3FC',
+  black: '#000',
+  main: '#1B1D4D',
+  link: '#FF5887',
+  error: '#E83F5B',
+  grafit: 'rgba(3, 3, 3, 0.1)',
+};
