@@ -1,7 +1,7 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import {themeProvider} from './themeProvider';
 import { ThemeProvider } from 'styled-components/native';
-import {theme} from '~/theme'
+import {theme} from '../src/theme'
 import {
   useFonts,
   Poppins_100Thin,
@@ -45,11 +45,7 @@ export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
-      order: [
-        'Introduction',
-        ['Welcome'],
-        ['Atoms', 'Molecules', 'Organisms', 'Templates']
-      ],
+      order: ['Intro', 'Pages', ['Home', 'Login', 'Admin'], 'Components'],
     },
   },  
 };

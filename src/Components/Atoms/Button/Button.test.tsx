@@ -1,16 +1,16 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { provider as wrapper } from '../../utils/provider';
-import { Button, IButtonProps } from '.';
+import { provider as wrapper } from '@utils/provider';
+import { Button } from '.';
+import { IPropsButton } from './types';
 
 describe('Atoms/Button', () => {
   const elButton = 'Button';
 
-  const props: IButtonProps = {
+  const props: IPropsButton = {
     title: 'teste',
     onPress: jest.fn(),
-    gradient: true,
   };
 
   const setup = () => {

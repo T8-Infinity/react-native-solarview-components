@@ -1,7 +1,7 @@
 import React from 'react';
 import { select } from '@storybook/addon-knobs';
 
-import { ActivityIndicatorLoading } from '.';
+import { Loading } from '.';
 
 // import { Controller, useForm } from 'react-hook-form'
 export default {
@@ -9,7 +9,5 @@ export default {
 };
 
 export const normal = () => (
-  <ActivityIndicatorLoading
-    size={select('size', ['large', 'small'], 'large')}
-  />
+  <Loading size={select('size', ['large', 'small'], 'large')} />
 );

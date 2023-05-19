@@ -13,6 +13,4 @@ export default {
   },
 } as ComponentMeta<typeof Skip>;
 
-export const Primary: ComponentStory<typeof Skip> = (args) => (
-  <Skip {...args} />
-);
+export const Primary: ComponentStory<typeof Skip> = args => <Skip {...args} />;

@@ -10,6 +10,6 @@ export default {
   },
 } as ComponentMeta<typeof Typography>;
 
-export const Primary: ComponentStory<typeof Typography> = (args) => (
+export const Primary: ComponentStory<typeof Typography> = args => (
   <Typography {...args} />
 );

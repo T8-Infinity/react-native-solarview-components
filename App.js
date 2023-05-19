@@ -1,9 +1,8 @@
+/* eslint-disable camelcase */
 import 'react-native-gesture-handler';
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
-import { theme } from './components/theme';
-import StorybookUIRoot from "./.ondevice/Storybook";
-import { Platform, StatusBar, View } from "react-native";
+import { Platform, StatusBar, View } from 'react-native';
 import {
   useFonts,
   Poppins_100Thin,
@@ -17,7 +16,8 @@ import {
   Poppins_900Black,
 } from '@expo-google-fonts/poppins';
 import Apploading from 'expo-app-loading';
-
+import { theme } from '@theme/index';
+import StorybookUIRoot from './.ondevice/Storybook';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -37,14 +37,14 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-    <View
-      style={{
-        flex: 1,
-        marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-      }}
-    >
-      <StorybookUIRoot />
-    </View>
+      <View
+        style={{
+          flex: 1,
+          marginTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+        }}
+      >
+        <StorybookUIRoot />
+      </View>
     </ThemeProvider>
   );
 }

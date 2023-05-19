@@ -8,7 +8,7 @@ interface Props extends ActivityIndicatorProps {
   color?: string;
 }
 
-export function ActivityIndicatorLoading({ size, color }: Props) {
+export function Loading({ size, color }: Props) {
   const { colors } = useTheme();
   return (
     <Container>
