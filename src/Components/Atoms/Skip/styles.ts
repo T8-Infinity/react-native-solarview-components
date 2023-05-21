@@ -10,5 +10,5 @@ export const Container = styled(TouchableOpacity)`
 
 export const Icone = styled(Feather)`
   font-size: ${RFValue(16)}px;
-  color: ${({ theme }) => theme.colors.main};
+  color: ${({ theme }) => theme.colors.primaryColor};
 `;

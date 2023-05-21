@@ -36,7 +36,6 @@ export const Container = styled(TouchableOpacity)<IProps>`
       border-color: ${borderColor};
     `}
 
-  border-radius: 5px;
   margin-bottom: ${normalizePx(16)};
   border-radius: 10px;
 `;
@@ -60,3 +59,5 @@ export const WrapperLoading = styled.View`
   justify-self: center;
   margin-bottom: ${normalizePx(13)};
 `;
+
+export const WrapperInput = styled.View``;

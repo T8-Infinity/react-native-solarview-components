@@ -1,7 +1,7 @@
 module.exports = {
   preset: "jest-expo",
   verbose: false,
-  roots: ['<rootDir>/components'],
+  roots: ['<rootDir>/src'],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
   ],

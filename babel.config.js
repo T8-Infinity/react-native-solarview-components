@@ -8,10 +8,10 @@ module.exports = function(api) {
         "root": ["./src"],
         "alias": {
           '@assets': './src/assets',
-          '@Components': './src/Components',
+          '@components': './src/components',
           '@intro': './src/intro',
-          '@Introduction': './src/Introduction',
-          '@Docs': './src/Docs',
+          '@introduction': './src/introduction',
+          '@docs': './src/docs',
           '@theme': './src/theme',
           '@utils': './src/utils',
         }

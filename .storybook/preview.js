@@ -29,8 +29,13 @@ if (queryParams.has('hideHeader')) {
 }
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: { sort: 'alpha' },
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
   docs: {
     theme: themeProvider,
     source: {
@@ -41,13 +46,6 @@ export const parameters = {
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
-
-  options: {
-    storySort: {
-      method: 'alphabetical',
-      order: ['Intro', 'Pages', ['Home', 'Login', 'Admin'], 'Components'],
-    },
-  },  
 };
 
 const withThemeProvider=(Story,context)=>{

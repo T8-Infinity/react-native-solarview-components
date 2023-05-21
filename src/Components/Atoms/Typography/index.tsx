@@ -1,9 +1,11 @@
 import React from 'react';
+import { normalizePx } from '@utils/normalize';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { Text } from './styles';
 
 interface ITextProps {
   text: string;
-  size: number;
+  size?: number;
   color?: string;
   variant:
     | 'Poppins_100Thin'
@@ -20,7 +22,7 @@ interface ITextProps {
 export const Typography: React.FC<ITextProps> = ({
   text,
   variant,
-  size,
+  size = RFValue(16),
   color,
 }) => {
   return (

@@ -1,6 +1,7 @@
 {
-  "name": "dssolarview",
+  "name": "react-native-solarview-components",
   "version": "1.0.0",
+  "description": "SolarView components for React Native",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -15,8 +16,12 @@
     "build-storybook": "storybook build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "commit": "git-cz",
-    "test": "jest --watchAll=false",
-    "test:export": "jest -u --coverage --json --outputFile=.jest-test-results.json || true"
+    "test:generate-output": "jest -u --json --outputFile=.jest-test-results.json || true",
+    "test": "jest --verbose --coverage --updateSnapshot --watchAll=false --maxWorkers=50%",
+    "test:export": "jest -u --coverage --json --outputFile=.jest-test-results.json || true",
+    "testdev": "jest --watch ",
+    "testdevc": "jest --watch --coverage ",
+    "testview": "npx live-server reports/lcov-report "
   },
   "husky": {
     "hooks": {
@@ -28,11 +33,13 @@
   "lint-staged": {
     "*.tsx": [
       "eslint --fix",
+      "jest --passWithNoTests",
       "git add"
     ]
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.2",
+    "@expo/vector-icons": "^13.0.0",
     "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-native-community/datetimepicker": "6.5.2",
     "@react-native-community/slider": "4.2.4",
@@ -118,6 +125,14 @@
     "storybook": "^7.0.12",
     "typescript": "^4.6.3"
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

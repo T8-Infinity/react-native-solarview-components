@@ -3,11 +3,10 @@ import { select } from '@storybook/addon-knobs';
 
 import { Loading } from '.';
 
-// import { Controller, useForm } from 'react-hook-form'
 export default {
   title: 'Atoms/Loading',
 };
 
-export const normal = () => (
+export const Basic = () => (
   <Loading size={select('size', ['large', 'small'], 'large')} />
 );

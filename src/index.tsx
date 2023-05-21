@@ -1,5 +1,4 @@
 // Atoms
-export { Button } from '@Components/Atoms/Button';
 
 // Molecules
 

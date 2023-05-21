@@ -28,7 +28,7 @@ argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
 
 const getStories = () => {
   return [
-    require("../Components/Atoms/Button/Button.stories.tsx"),
+    require("../src/components/Atoms/Button/Button.stories.tsx"),
   ];
 };
 

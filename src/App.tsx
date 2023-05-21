@@ -17,7 +17,7 @@ import {
 } from '@expo-google-fonts/poppins';
 import Apploading from 'expo-app-loading';
 import { theme } from '@theme/index';
-import StorybookUIRoot from './.ondevice/Storybook';
+import StorybookUIRoot from '../.ondevice/Storybook';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

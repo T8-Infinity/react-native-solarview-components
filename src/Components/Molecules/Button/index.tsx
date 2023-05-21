@@ -1,18 +1,19 @@
 import React from 'react';
-import { Container, Text, WrapperLoading } from './styles';
+import { Loading } from '@components/Atoms/Loading';
+import { Typography } from '@components/Atoms/Typography';
+import { Container, Text, WrapperInput, WrapperLoading } from './styles';
 import { IPropsButton } from './types';
-import { Loading } from '../Loading';
 
 export function Button({
   backgroundColor = '#0EA082',
   borderColor,
-  colorTitle,
+  colorTitle = 'white',
   disabled,
   loading,
   onPress,
   outline,
   title = 'ok',
-  testID,
+  testID = 'Button',
   ...rest
 }: IPropsButton) {
   return (
@@ -32,7 +33,15 @@ export function Button({
           </WrapperLoading>
         </>
       ) : (
-        <Text colorTitle={colorTitle}>{title}</Text>
+        <>
+          <WrapperInput>
+            <Typography
+              color={colorTitle}
+              text={title}
+              variant="Poppins_400Regular"
+            />
+          </WrapperInput>
+        </>
       )}
     </Container>
   );

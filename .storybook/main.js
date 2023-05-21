@@ -1,9 +1,11 @@
 module.exports = {
   stories: [
-    '../src/Docs/**/*.stories.mdx',
-    '../src/Docs/**/*.stories.@(js|jsx|ts|tsx)',
-    '../src/Components/**/*.stories.mdx',
-    '../src/Components/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/introduction/**/*.stories.mdx',
+    '../src/introduction/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/components/**/*.stories.mdx',
+    '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/docs/**/*.stories.mdx',
+    '../src/docs/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
     '@storybook/addon-links',
