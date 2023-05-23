@@ -1,7 +1,7 @@
 {
   "name": "react-native-solarview-components",
-  "version": "1.0.0",
-  "description": "SolarView components for React Native",
+  "version": "1.0.1",
+  "description": "SolarView",
   "license": "ISC",
   "main": "lib/commonjs/index.js",
   "react-native": "lib/module/index.js",
@@ -48,7 +48,8 @@
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:formater": "yarn format &&  yarn lint",
-    "lint:report": "eslint --quiet --ext .js,.jsx,.ts,.tsx src -f json -o test/coverage/eslint-report.json"
+    "lint:report": "eslint --quiet --ext .js,.jsx,.ts,.tsx src -f json -o test/coverage/eslint-report.json",
+    "release": "release-it"
   },
   "husky": {
     "hooks": {
@@ -202,5 +203,7 @@
   "resolutions": {
     "styled-components": "^5"
   },
-  "private": true
+  "private": true,
+  "repository": "git@github.com:T8-Infinity/ds-solarview.git",
+  "author": "devdanalmeida@gmail.com <devdanalmeida@gmail.com>"
 }

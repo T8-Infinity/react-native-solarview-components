@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components/native';
 import { TouchableOpacity } from 'react-native';
 import { normalizePx } from '@utils/normalize';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { Ionicons } from '@expo/vector-icons';
 
 type IProps = {
   backgroundColor?: string;
@@ -60,4 +61,18 @@ export const WrapperLoading = styled.View`
   margin-bottom: ${normalizePx(13)};
 `;
 
-export const WrapperInput = styled.View``;
+export const WrapperInput = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const Icon = styled(Ionicons).attrs(({ theme }) => ({
+  size: theme.size.lg,
+}))<{ colorIcon: string }>`
+  margin-right: 16px;
+  ${({ colorIcon }) =>
+    colorIcon &&
+    css`
+      color: ${colorIcon};
+    `}
+`;

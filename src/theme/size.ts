@@ -13,4 +13,4 @@ export const size = {
   '7xl': 72,
   '8xl': 96,
   '9xl': 128,
-};
+} as const;

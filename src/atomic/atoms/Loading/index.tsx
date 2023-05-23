@@ -1,17 +1,13 @@
 import React from 'react';
-import { ActivityIndicator, ActivityIndicatorProps } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 import { useTheme } from 'styled-components/native';
 import { Container } from './styles';
+import { Props } from './types';
 
-interface Props extends ActivityIndicatorProps {
-  size: 'large' | 'small';
-  color?: string;
-}
-
-export function Loading({ size, color }: Props) {
+export function Loading({ testID = 'Loading', size, color }: Props) {
   const { colors } = useTheme();
   return (
-    <Container>
+    <Container testID={`${testID}`}>
       <ActivityIndicator color={color || colors.white} size={size} />
     </Container>
   );

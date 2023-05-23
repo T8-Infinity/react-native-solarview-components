@@ -13,7 +13,7 @@ import Pin from './pin.png';
 import QrCodePrimary from './qrCodePrimary.png';
 import Cart from './cart.svg';
 
-export const Icones = {
+export const IconsSvg = {
   Check,
   Eye,
   EyeClosed,

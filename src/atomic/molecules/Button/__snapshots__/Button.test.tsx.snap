@@ -36,13 +36,13 @@ exports[`Molecules/Button should render snapshot 1`] = `
   >
     <Text
       color="white"
-      size={31}
+      fontSize={16}
       style={
         Array [
           Object {
             "color": "white",
             "fontFamily": "Poppins_400Regular",
-            "fontSize": 61,
+            "fontSize": 16,
           },
         ]
       }

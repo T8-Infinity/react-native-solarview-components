@@ -1,6 +1,7 @@
 import { TouchableOpacityProps } from 'react-native';
 
 export interface IPropsButton extends TouchableOpacityProps {
+  testID?: string;
   title: string;
   loading?: boolean;
   colorTitle?: string;
@@ -9,6 +10,5 @@ export interface IPropsButton extends TouchableOpacityProps {
   outline?: boolean;
   disabled?: boolean;
   borderColor?: string;
-  testID?: string;
-  icon: string;
+  icon?: string;
 }

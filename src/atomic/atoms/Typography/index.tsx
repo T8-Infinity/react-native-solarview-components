@@ -1,31 +1,17 @@
 import React from 'react';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { fonts } from '@theme/fonts';
+import { size } from '@theme/size';
 import { Text } from './styles';
-
-interface ITextProps {
-  text: string;
-  size?: number;
-  color?: string;
-  variant:
-    | 'Poppins_100Thin'
-    | 'Poppins_200ExtraLight'
-    | 'Poppins_400Regular'
-    | 'Poppins_300Light'
-    | 'Poppins_500Medium'
-    | 'Poppins_600SemiBold'
-    | 'Poppins_700Bold'
-    | 'Poppins_800ExtraBold'
-    | 'Poppins_900Black';
-}
+import { ITextProps } from './types';
 
 export const Typography: React.FC<ITextProps> = ({
   text,
-  variant,
-  size = RFValue(16),
+  variant = 'Medium',
+  fontSize,
   color,
 }) => {
   return (
-    <Text variant={variant} size={size} color={color}>
+    <Text variant={fonts[variant]} fontSize={size[fontSize]} color={color}>
       {text}
     </Text>
   );

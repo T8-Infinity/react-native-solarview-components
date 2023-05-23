@@ -1,5 +1,5 @@
 import colors from './colors';
-import fonts from './fonts';
+import { fonts } from './fonts';
 import metrics from './metrics';
 import shadows from './shadows';
 import { gradient } from './gradient';

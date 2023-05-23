@@ -1,4 +1,4 @@
-export default {
+export const fonts = {
   Thin: 'Poppins_100Thin',
   ExtraLight: 'Poppins_200ExtraLight',
   Regular: 'Poppins_400Regular',

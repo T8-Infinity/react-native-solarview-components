@@ -1,10 +1,11 @@
 import React from 'react';
 import { Loading } from '@atomic/atoms/Loading';
 import { Typography } from '@atomic/atoms/Typography';
-import { Container, WrapperInput, WrapperLoading } from './styles';
+import { Container, Icon, WrapperInput, WrapperLoading } from './styles';
 import { IPropsButton } from './types';
 
 export function Button({
+  testID = 'Button',
   backgroundColor = '#0EA082',
   borderColor,
   colorTitle = 'white',
@@ -13,7 +14,7 @@ export function Button({
   onPress,
   outline,
   title = 'ok',
-  testID = 'Button',
+  icon,
   ...rest
 }: IPropsButton) {
   return (
@@ -35,10 +36,12 @@ export function Button({
       ) : (
         <>
           <WrapperInput>
+            {icon && <Icon name={icon} color={colorTitle} />}
             <Typography
               color={colorTitle}
               text={title}
-              variant="Poppins_400Regular"
+              variant="Regular"
+              fontSize="md"
             />
           </WrapperInput>
         </>
