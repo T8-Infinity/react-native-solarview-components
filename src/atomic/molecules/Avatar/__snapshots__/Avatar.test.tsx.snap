@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Avatar should render snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+  testID="Avatar"
+>
+  <Image
+    resizeMode="contain"
+    size="lg"
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "borderColor": "#008868",
+          "borderRadius": 128,
+          "borderWidth": 3,
+          "height": 192,
+          "width": 192,
+        },
+      ]
+    }
+    testID="Avatar_image"
+    type="integrator"
+  />
+  <View
+    size="lg"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 48,
+          "bottom": 14,
+          "height": 48,
+          "justifyContent": "center",
+          "left": 140,
+          "position": "absolute",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+      testID="Avatar_button"
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="Avatar_button_touch"
+      >
+        <View
+          color=""
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#008868",
+                "borderRadius": 48,
+                "height": 48,
+                "justifyContent": "center",
+                "width": 48,
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#fff",
+                  "fontSize": 18,
+                },
+                Array [
+                  Object {},
+                ],
+                Object {
+                  "fontFamily": "material-community",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            󰄀
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

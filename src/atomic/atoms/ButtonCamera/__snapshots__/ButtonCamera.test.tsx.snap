@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/ButtonCamera should render snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+    ]
+  }
+  testID="ButtonCamera"
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="ButtonCamera_touch"
+  >
+    <View
+      color="red"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "red",
+            "borderRadius": 48,
+            "height": 48,
+            "justifyContent": "center",
+            "width": 48,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 18,
+            },
+            Array [
+              Object {},
+            ],
+            Object {
+              "fontFamily": "material-community",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        󰄀
+      </Text>
+    </View>
+  </View>
+</View>
+`;

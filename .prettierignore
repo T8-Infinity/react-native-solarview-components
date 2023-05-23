@@ -1,0 +1,17 @@
+/coverage
+/dist
+/test
+/examples
+/node_modules
+/package-lock.json
+/scripts
+/build
+lib/*
+src/utils/.*
+src/theme/.*
+src/assets/.*
+src/docs/.*
+src/introduction/.*
+src/__snapshots__/.*
+yarn.lock
+__snapshots__

@@ -1,21 +1,56 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@theme/*": ["./src/theme/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@docs/*": ["./src/docs/*"],
-    }
+  "baseUrl": ".",
+  "paths": {
+    "@assets/*": ["./src/assets/*"],
+    "@atomic/*": ["./src/atomic/*"],
+    "@theme/*": ["./src/theme/*"],
+    "@utils/*": ["./src/utils/*"],
+    "@docs/*": ["./src/docs/*"],
+    "react-native-solarview-components": [
+      "./src/"
+    ],
+    "react-native-builder-bob": ["./packages/react-native-builder-bob/src"]
   },
-  "include": [
-    "src"
-  ],
-  "exclude": ["node_modules"],
+  "resolveJsonModule": true,
+  "declaration": true,
+  "allowUnreachableCode": false,
+  "allowUnusedLabels": false,
+  "esModuleInterop": true,
+  "forceConsistentCasingInFileNames": true,
+  "jsx": "react",
+  "lib": ["esnext", "dom"],
+  "module": "ES2020",
+  "moduleResolution": "node",
+  "noFallthroughCasesInSwitch": true,
+  "noImplicitReturns": true,
+  "noImplicitUseStrict": false,
+  "noStrictGenericChecks": false,
+  "noUncheckedIndexedAccess": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "skipLibCheck": true,
+  "strict": true,
+  "target": "esnext",
 
+},
+"plugins": [
+  {
+    "name": "typescript-styled-plugin"
+  }
+],
+  "include": [
+    "src",
+    "@types",
+    "assets"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib",
+    "example",
+    "reports",
+    ".storybook",
+    ".scaffdog"
+  ]
 }

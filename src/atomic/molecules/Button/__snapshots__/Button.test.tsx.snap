@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Button should render snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#0EA082",
+      "borderRadius": 10,
+      "flexDirection": "row",
+      "height": 100,
+      "justifyContent": "center",
+      "marginBottom": 32,
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+  testID="Button_ButtonComponent"
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <Text
+      color="white"
+      size={31}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontFamily": "Poppins_400Regular",
+            "fontSize": 61,
+          },
+        ]
+      }
+      variant="Poppins_400Regular"
+    >
+      teste
+    </Text>
+  </View>
+</View>
+`;

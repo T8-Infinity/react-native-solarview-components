@@ -3,18 +3,9 @@ module.exports = {
   verbose: false,
   roots: ['<rootDir>/src'],
   setupFilesAfterEnv: [
-    "@testing-library/jest-native/extend-expect",
-    "<rootDir>/scripts/setupJest"
+    '@testing-library/jest-native/extend-expect',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  modulePathIgnorePatterns: ["<rootDir>/lib/"],
-  reporters: [
-    "default",
-    [
-      "jest-sonar",
-      { outputDirectory: "test/coverage/", outputName: "test-report.xml" }
-    ]
-  ],
   transformIgnorePatterns: [],
   collectCoverage: true,
   coverageDirectory: 'test/coverage',
